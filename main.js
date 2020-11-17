@@ -2,6 +2,7 @@ div = document.getElementById("myDIV")
 div2 = document.getElementById("myDIV2")
 res = document.getElementById("res")
 
+
 var normal = 0;
 $('#addCount').click( () => {
     normal++
@@ -31,11 +32,7 @@ $('#lessCountR').click(() => {
         
     }
 });
-var precoN = normal * 3
-var precoR = recheio * 5
+
 $('#calc').click(() => {
-    res.innerHTML = `${recheio} donuts com recheio = ${precoR} <br> ${normal} donuts normal/is = ${precoN} <br> <strong>TOTAL:</strong> ${precoN + precoR}`
+    res.innerHTML = `${recheio} donuts com recheio = ${recheio * 5} <br> ${normal} donuts normal/is = ${normal * 3} <br> <strong>TOTAL:</strong> ${(recheio * 5) + (normal * 3)}`
 });
-
-
-
